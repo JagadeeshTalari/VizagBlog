@@ -1,0 +1,155 @@
+.first-container {
+  width: 100%;
+  height: 809px;
+  top: 0;
+}
+.background-image {
+  width: 100%;
+  height: 809px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.over-image-content {
+  width: 60%;
+  height: 344px;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Align content center horizontally */
+  color: white; /* Example color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.over-image-content-head {
+  width: 268px;
+  height: 27px;
+  top: 59px;
+  left: 425px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  align-content: end;
+  color: rgba(251, 215, 132, 1);
+}
+.bar {
+  background-color: rgba(251, 215, 132, 1);
+  height: 1px;
+  width: 50px;
+  margin-top: 9px;
+}
+.over-image-content-value {
+  display: flex;
+  height: 27px;
+}
+.over-image-content-explore {
+  width: 683px;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.white-border {
+  border-color: white !important; /* Set border color to white */
+}
+.second-container {
+  width: 1440px;
+  height: 720px;
+  background: rgba(11, 29, 38, 1);
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1440px) {
+  .background-image {
+    height: 600px;
+    width: 100%; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 1280px) {
+  .background-image {
+    height: 500px;
+    width: 100%;
+    /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .background-image {
+    height: 500px;
+    width: 101%; /* Adjusted height for tablets */
+  }
+
+  .bar {
+    width: 16px;
+  }
+
+  .over-image-content-explore {
+    width: 470px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .over-image-content-head {
+    width: 190px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 8px;
+  }
+
+  .over-image-content-search {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    max-height: 400px;
+    width: 102%;
+  }
+  .bar {
+    background-color: rgba(251, 215, 132, 1);
+    height: 1px;
+    width: 16px;
+    margin-top: 9px;
+  }
+  .over-image-content-explore {
+    width: 470px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+  .over-image-content-head {
+    width: 190px;
+    height: 20px;
+    line-height: 20px;
+    left: 425px;
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    text-align: center;
+    align-content: end;
+    color: rgba(251, 215, 132, 1);
+  }
+  .over-image-content-search {
+    width: 90%; /* Adjust the width as per your requirement */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  }
+}
